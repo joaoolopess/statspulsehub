@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stats Pulse Hub</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f4f4f4;
-    }
-    h1 {
+      line-height: 1.6;
+      background-color: #f8f9fa;
       color: #333;
+    }
+
+    header {
+      background: #005a9c;
+      color: white;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background: #e9ecef;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Stats Pulse Hub</h1>
-  <p>This is your first live website. More content coming soon.</p>
+  <header>
+    <h1>Stats Pulse Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        Stats Pulse Hub is a space for sharing insights, resources, and practical knowledge about statistics in clinical research and beyond.
+      </p>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        This site is maintained by a statistician working in cancer clinical trials. The goal is to demystify statistical thinking and share useful content for researchers, students, and curious minds.
+      </p>
+    </section>
+
+    <section>
+      <h2>What is coming next</h2>
+      <p>
+        Blog posts, tutorials, datasets, and tools focused on clinical trials, quality of life, survival analysis, reproducibility, and more.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Stats Pulse Hub. All rights reserved.
+  </footer>
 </body>
 </html>
