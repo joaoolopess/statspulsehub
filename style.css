@@ -6,36 +6,64 @@ body {
   background-color: #f8f9fa;
   color: #333;
 }
+
 header {
   background: #005a9c;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
+
 header h1 {
   margin: 0;
   font-size: 1.5rem;
 }
+
 nav {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 nav a {
   color: white;
   text-decoration: none;
-  margin-right: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
+
 .container {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 footer {
   background: #e9ecef;
   text-align: center;
   padding: 1rem;
   font-size: 0.85rem;
   color: #555;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
 }
