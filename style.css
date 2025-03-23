@@ -1,41 +1,44 @@
 
 :root {
   --primary-color: #f97316;
-  --background-color: #ffffff;
+  --bg-light: #fff7ed;
   --text-color: #1f2937;
-  --header-bg: #fff7ed;
-  --footer-bg: #fef3c7;
+  --bg-footer: #fef3c7;
+  --link-hover: #ea580c;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--background-color);
+  background-color: white;
   color: var(--text-color);
   line-height: 1.6;
 }
 
 header {
-  background: var(--header-bg);
+  background: var(--bg-light);
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #fcd34d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 nav {
-  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 nav a {
@@ -45,29 +48,29 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  color: var(--link-hover);
 }
 
 .hero {
+  background-color: var(--bg-light);
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #fff7ed;
 }
 
 .hero h2 {
   font-size: 2.5rem;
-  color: var(--primary-color);
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .hero p {
   font-size: 1.2rem;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
@@ -77,7 +80,7 @@ section {
 }
 
 footer {
-  background: var(--footer-bg);
+  background: var(--bg-footer);
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
