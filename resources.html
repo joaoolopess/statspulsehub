@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources – Stats Pulse Hub</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .video-container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    video {
+      max-width: 720px;
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -44,10 +56,12 @@
   <section class="container">
     <h3>Watch: Creating a CONSORT Diagram</h3>
     <p>This short video explains how to build a clear CONSORT diagram for your trial report.</p>
-    <video width="100%" controls>
-      <source src="creating%20a%20consort%20diagram.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+      <video controls>
+        <source src="creating%20a%20consort%20diagram.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </section>
 
   <footer>
